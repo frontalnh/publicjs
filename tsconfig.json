@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "outDir": "./dist/",
+    "noImplicitAny": false,
+    "lib": [
+      "es2015",
+      "dom"
+    ],
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "watch": true,
+    "baseUrl": "src",
+    "resolveJsonModule": true
+  }
+}
