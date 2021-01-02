@@ -1,4 +1,4 @@
-import { SESHelper } from "../lib/ses-helper";
+import { SESHelper } from "./index";
 
 const sesHelper = new SESHelper({ region: 'ap-northeast-2' })
 

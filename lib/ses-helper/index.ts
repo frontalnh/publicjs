@@ -1,6 +1,5 @@
 import { SES } from 'aws-sdk'
 
-
 export class SESHelper {
   public ses: SES
 
