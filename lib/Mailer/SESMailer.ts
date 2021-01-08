@@ -1,6 +1,6 @@
 import { SES } from 'aws-sdk'
 
-export class SESHelper {
+export class SESMailer implements Mailer {
   public ses: SES
 
   constructor({

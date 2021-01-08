@@ -1,6 +1,6 @@
-import { SESHelper } from "./index";
+import { SESMailer } from "./SESMailer";
 
-const sesHelper = new SESHelper({ region: 'ap-northeast-2' })
+const sesHelper = new SESMailer({ region: 'ap-northeast-2' })
 
 describe('test mailer', () => {
   it('send html', async () => {
