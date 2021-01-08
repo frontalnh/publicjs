@@ -18,13 +18,13 @@ describe('Test Telegram Lib', () => {
   })
 
   it('Test Send Code', async () => {
-    await telegram.sendCode('+821042992920')
+    await telegram.sendCode('+821012341234')
   })
 
   it('Test Sign In', async () => {
-    await telegram.sendCode('+821042992920')
+    await telegram.sendCode('+821012341234')
     const code = prompt('텔레그램에서 받은 코드를 입력해주세요')
-    await telegram.signIn({ code, phone: '+821042992920' })
+    await telegram.signIn({ code, phone: '+821012341234' })
   })
 
   it('Test Get User Dialogs', async () => {
