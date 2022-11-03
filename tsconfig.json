@@ -7,15 +7,16 @@
     "allowJs": true,
     "outDir": "./dist/",
     "noImplicitAny": false,
-    "lib": [
-      "es2015",
-      "dom"
-    ],
+    "skipLibCheck": true,
+    "lib": ["es2015", "DOM"],
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "watch": true,
-    "baseUrl": "src",
-    "resolveJsonModule": true
-  }
+    "watch": false,
+    "resolveJsonModule": true,
+    "paths": {
+      "@lib/*": ["./lib/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
 }

@@ -1,13 +1,11 @@
 module.exports = {
-  preset: 'ts-jest',
-  testEnvironment: 'node',
+  preset: "ts-jest",
+  testEnvironment: "node",
+  moduleFileExtensions: ["js", "json", "jsx", "node", "ts", "tsx"],
   moduleNameMapper: {
-    '^@root/(.*)$': '<rootDir>/$1'
+    "^@lib/(.*)$": "<rootDir>/lib/$1",
   },
-  transform: {
-    '^.+\\.(js|jsx)$': 'babel-jest',
-    '^.+\\.(ts|tsx)$': 'ts-jest'
-  },
-  moduleFileExtensions: ['js', 'json', 'jsx', 'node', 'ts', 'tsx'],
-  testMatch: ['**/*.test.+(ts|tsx|js)']
+  transform: { "^.+\\.jsx?$": "babel-jest", "^.+\\.(ts|tsx)$": "ts-jest" },
+  testMatch: ["**/*.test.+(ts|tsx|js|jsx)"],
+  // setupTestFrameworkScriptFile: '<rootDir>/src/test/setup.ts'
 };
