@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@types/tunnel-ssh": "^4.1.1",
     "tunnel-ssh": "^4.1.6"
   },
   "devDependencies": {

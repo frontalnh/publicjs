@@ -6,9 +6,9 @@ describe("test createSSHTunnel", () => {
     const localHost = "127.0.0.1";
     const localPort = 3307;
     const dstPort = 3306;
-    const dstHost = "prod-gigscout-db-endpoint.cluster-custom-cq6qodluq8da.ap-northeast-2.rds.amazonaws.com";
-    const privateKey = fs.readFileSync("/Users/namhoonlee/.ssh/prod-indinity.pem");
-    const sshHost = "3.36.236.60";
+    const dstHost = "데이터베이스 호스트";
+    const privateKey = fs.readFileSync("인증키 파일위치");
+    const sshHost = "SSH 터널링 호스트";
 
     const tunnel = await createSSHTunnel({
       username: "ec2-user",
